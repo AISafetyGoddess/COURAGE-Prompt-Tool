@@ -51,3 +51,20 @@ As development progresses, this repository will document:
 ---
 
 *COURAGE Prompt: Chat → Order → Understand → Research → Analysis → Generate → Execute.*
+
+## Framework comparison resource — implementation added
+
+A portfolio-safe, research-cautious comparison interface is included at [`src/components/FrameworkComparison.jsx`](src/components/FrameworkComparison.jsx).
+
+- Filter by task type and search descriptions or framework structures.
+- Expand individual frameworks to understand their structures and suggested contexts.
+- Sort without losing expanded-row identity (stable framework IDs).
+- Uses a navy/gold visual identity and accessible labels, focus states and mobile layouts.
+- Does **not** make unsupported rankings, endorsements, time/cost savings, or effectiveness claims.
+- Separates prompting techniques from multi-stage frameworks.
+
+**Integration:** This file is a React + Tailwind component using `lucide-react`. Mount it within a React app route such as `/resources/frameworks`. In Base44, adapt its code to the existing project structure and add a **Resources → Compare Frameworks** navigation item. Preserve all existing app routes and logic. `/build` is the existing launch destination.
+
+**Status:** Code committed to GitHub. Not connected to or deployed on the production Base44 website. This repository currently has no complete runnable app build or automated tests for the component.
+
+**Content review before live publication:** Verify the names/expansions and relevant primary references for each third-party framework; the categorization is illustrative, not a benchmark. Keep the comparison separate from promotional promises until empirical testing supports them.
